@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+    
+    <div class="box">
+    <img src="businessman.png" class="user">
+
+    <h1>Login Here</h1>
+
+    <form name="myform">
+        <p>Username </p>
+        <input type="text" name="uname" placeholder="UserName"><br>
+
+        <p>Password</p>
+        <input type="password" name="upswd" placeholder="Password">
+
+        <div id="errorBox"></div>
+
+        <input type="button" onclick="check(this.form)" value="Login"/>
+
+        <br>
+        <a href="forger Password">Forget Password</a>
+    </div>
+    </form>
+    <script language="javascript">
+        function check(form)/*function to check userid & password*/
+        {
+         /*the following code checkes whether the entered userid and password are matching*/
+         if(form.uname.value == "Praveen.k" && form.upswd.value == "Praveenvirat18")
+          {
+            window.open('button.html')/*opens the target page while Id & password matches*/
+          }
+         else
+         {
+           alert("Error Password or Username")/*displays error message*/
+          }
+        }
+        </script>
+</body>
